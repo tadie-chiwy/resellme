@@ -1,0 +1,680 @@
+aa html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "regular";
+}
+body h2 {
+  font-size: 30px;
+  font-family: "semi-bold";
+}
+body h3 {
+  font-size: 20px;
+}
+body header {
+  height: 20vh;
+  display: flex;
+  color: black;
+  justify-content: center;
+  align-items: center;
+}
+body header ul {
+  display: none;
+}
+body header ol {
+  display: none;
+}
+body header .path {
+  position: relative;
+  top: -18px;
+  right: 65px;
+}
+body header .logo {
+  margin: -24px 0 0 -35px;
+}
+body header .hamburger {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+}
+body header .hamburger .bar1,
+body header .hamburger .bar2,
+body header .hamburger .bar3 {
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  color: black;
+  margin: 6px 0;
+  width: 35px;
+  height: 5px;
+  margin-right: 0;
+  position: relative;
+  right: -46px;
+  top: -29px;
+}
+body header.open {
+  background-color: orange;
+  width: 100%;
+  height: 100vh;
+}
+body header.open .hamburger {
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 41px;
+  left: 265px;
+}
+body header.open .hamburger .bar1 {
+  transform: rotate(45deg) translate(15px, 15px);
+}
+body header.open .hamburger .bar2 {
+  opacity: 0;
+}
+body header.open .hamburger .bar3 {
+  transform: rotate(-45deg);
+}
+body header.open .path {
+  display: none;
+}
+body header.open .logo {
+  display: none;
+}
+body header.open ul {
+  display: block;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+body header.open ul li {
+  padding: 10px 0;
+}
+body header.open ul li a {
+  color: white;
+  font-size: 30px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+body .banner {
+  background-image: url(../img/banner.png);
+  height: 80vh;
+  width: 100vw;
+  background-position-x: -773px;
+  background-position-y: 484px;
+  color: white;
+  text-align: center;
+}
+body .banner .top {
+  font-size: 50px;
+  font-family: "bold";
+  padding-top: 120px;
+}
+body .banner .bottom {
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: "bold";
+}
+body .banner ol {
+  display: flex;
+  padding: 15px 0 0 43px;
+}
+body .banner ol li {
+  font-size: 20px;
+  font-family: "semi-bold";
+  margin: 6px;
+}
+body .product {
+  background-color: rgb(243, 243, 243);
+  margin-top: 45px;
+}
+body .product .item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  background-color: rgb(243, 243, 243);
+}
+body .product .item h2 {
+  color: black;
+}
+body .product .item h3 {
+  border-bottom: 2px solid black;
+}
+body .product .item .search {
+  width: 5%;
+  height: 5%;
+  margin-right: 7px;
+}
+body .product .item .tpath {
+  margin: 0 0 0 -40px;
+  width: 15%;
+}
+body .product .items {
+  position: relative;
+  display: flex;
+  margin: 0 29px;
+  color: rgb(243, 243, 243);
+}
+body .product .items ul li {
+  padding: 10px;
+  color: black;
+}
+body .product .items .bpath {
+  position: absolute;
+  bottom: 5px;
+  right: 2x;
+  right: -28px;
+  width: 15%;
+}
+body .more {
+  background-color: rgb(243, 243, 243);
+  margin-top: 40px;
+}
+body .more p {
+  padding: 20px 0 20px 10px;
+}
+body .images {
+  margin-top: 30px;
+  text-align: center;
+}
+body .images img {
+  width: 100%;
+}
+body .selling {
+  text-align: center;
+}
+body .selling .arrow {
+  position: absolute;
+  bottom: 1px;
+  left: 204px;
+}
+body .selling .card {
+  box-shadow: 5px 5px 5px 5px rgba(136, 135, 135, 0.75);
+  margin: 10px 0;
+}
+body .selling h2 {
+  margin: 80px 0 30px 0;
+}
+body .selling .cart {
+  position: relative;
+}
+body .selling .orange {
+  box-shadow: 5px;
+}
+body .selling .arr {
+  position: relative;
+}
+body .selling .peanut {
+  position: relative;
+}
+body .off {
+  text-align: center;
+}
+body .off .card {
+  box-shadow: 5px 5px 5px 5px rgba(136, 135, 135, 0.75);
+  margin: 10px 0;
+}
+body .off h2 {
+  margin: 80px 0 30px 0;
+}
+body .off .arrow {
+  position: absolute;
+  bottom: 1px;
+  left: 204px;
+}
+body .off .tomato {
+  position: relative;
+}
+body .off .towel {
+  position: relative;
+}
+body .off .bottles {
+  position: relative;
+}
+body .breakfast {
+  background-image: url(../img/mukul-wadhwa-xpo5BggQo3E-unsplash.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  background-position-x: -100px;
+}
+body .breakfast h2 {
+  padding: 20px;
+}
+body .breakfast img {
+  position: absolute;
+  top: 76px;
+  right: 17px;
+}
+body .breakfast h3 {
+  position: absolute;
+  padding: 166px 5px 0 5px;
+  color: white;
+}
+body .contact {
+  margin-top: 65px;
+}
+body .contact .headings {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+body .contact .headings .le {
+  border-bottom: 2px solid black;
+}
+body .contact .headings .ri {
+  font-family: "regular";
+  margin-left: 20px;
+}
+body .contact .fo {
+  position: relative;
+}
+body .contact .fo form input {
+  margin-top: 30px;
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+body .contact .fo img {
+  position: absolute;
+  top: 30px;
+  left: 116px;
+}
+body .contact .log {
+  width: 50%;
+  margin-top: 90px;
+  margin-left: 102px;
+}
+body footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+body footer h2 {
+  padding: 30px 0 10px 0;
+}
+body footer h3 {
+  padding-bottom: 10px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  body header {
+    height: 40vh;
+  }
+  body header .path {
+    position: relative;
+    top: -27px;
+    right: 78px;
+  }
+  body header .hamburger {
+    position: absolute;
+    right: 68px;
+  }
+  body header .path {
+    position: relative;
+    top: -27px;
+    right: 229px;
+  }
+  body header .logo {
+    margin: -24px 0 0 -51px;
+  }
+  body .banner ol {
+    display: flex;
+    padding: 15px 0 0 91px;
+  }
+  body .item {
+    margin: 0px 0 0 -14px;
+  }
+  body .product .items {
+    margin: 0 199px;
+  }
+  body .product .items .bpath {
+    right: -196px;
+    width: 40%;
+  }
+  body .more p {
+    padding: 20px 0 20px 0;
+    text-align: center;
+  }
+  body .images img {
+    width: 69%;
+  }
+  body .selling .arrow {
+    left: 286px;
+  }
+  body .off .arrow {
+    left: 286px;
+  }
+  body .breakfast {
+    background-position-x: 0px;
+  }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  body h2 {
+    font-size: 34px;
+  }
+  body h3 {
+    font-size: 25px;
+  }
+  body p {
+    font-size: 31px;
+  }
+  body header {
+    height: 12vh;
+  }
+  body header .path {
+    right: 281px;
+  }
+  body header .logo {
+    margin: -24px 0 0 -60px;
+  }
+  body.open .hamburger {
+    transition: all 0.3s ease-in-out;
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 41px;
+    right: 20px;
+  }
+  body.open .banner {
+    background-image: url(../img/banner.png);
+    height: 88vh;
+    width: 100vw;
+    background-position-x: -493px;
+    background-position-y: 653px;
+    color: white;
+    text-align: center;
+  }
+  body.open .banner .top {
+    padding: 294px 0 0 0;
+  }
+  body.open .banner ol {
+    display: flex;
+    padding: 15px 0 0 139px;
+  }
+  body.open .product .items ul li {
+    font-size: 25px;
+  }
+  body.open .product .items .bpath {
+    right: -196px;
+    width: 30%;
+  }
+  body.open .more p {
+    padding: 20px 5px 20px 5px;
+    text-align: center;
+    font-size: 25px;
+  }
+  body.open .breakfast {
+    height: 370px;
+  }
+  body.open .breakfast h3 {
+    padding: 206px 5px 0 49px;
+    font-size: 25px;
+  }
+  body.open .breakfast {
+    background-position-x: 0px;
+  }
+  body.open .breakfast h3 {
+    margin: 28px 0 0 144px;
+  }
+  body.open .contact .log {
+    margin-left: 190px;
+  }
+  body.open .contact .fo form input {
+    margin-top: 70px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 42px;
+  }
+  body.open .contact .fo img {
+    position: absolute;
+    top: 57px;
+    left: 283px;
+    width: 20%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  body header {
+    height: 15vh;
+  }
+  body header .path {
+    right: 285px;
+  }
+  body header .hamburger {
+    display: none;
+  }
+  body header ul {
+    display: block;
+    display: flex;
+  }
+  body header ul li a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  body header ul .h {
+    font-family: "bold";
+  }
+  body header ol {
+    display: block;
+    font-size: 25px;
+  }
+  body header .logo {
+    margin: 0 20px 0 -2px;
+  }
+  body .banner {
+    background-image: url(../img/banner.png);
+    height: 88vh;
+    width: 100vw;
+    background-position-x: -29px;
+    background-position-y: 653px;
+    color: white;
+    text-align: center;
+  }
+  body .banner .top {
+    padding: 294px 850px 0 0;
+    font-size: 60px;
+  }
+  body .banner .bottom {
+    font-size: 60px;
+    padding: 0 850px 0 0;
+  }
+  body .banner ol {
+    display: flex;
+    padding: 15px 0 0 0px;
+  }
+  body .product .items {
+    margin: 0 413px;
+  }
+  body .product .items .bpath {
+    right: -385px;
+    width: 30%;
+  }
+  body .product .items ul li {
+    padding: 30px;
+  }
+  body .images img {
+    width: 100%;
+  }
+  body .breakfast {
+    height: 625px;
+  }
+  body .breakfast h3 {
+    padding: 466px 5px 0 361px;
+    font-size: 25px;
+  }
+  body .breakfast img {
+    top: 276px;
+    right: 35px;
+  }
+  body .breakfast h2 {
+    padding: 46px 0 0 20px;
+  }
+  body .contact .fo img {
+    position: absolute;
+    top: 68px;
+    left: 283px;
+    width: 10%;
+  }
+  body .contact .log {
+    margin-left: 532px;
+    width: 20%;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */

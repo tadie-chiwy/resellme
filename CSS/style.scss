@@ -1,0 +1,869 @@
+aa
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+$bold: "bold";
+$regular: "regular";
+$semibold: "semi-bold";
+
+body {
+    font-family: $regular;
+
+    h2 {
+        font-size: 30px;
+        font-family: $semibold;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    header {
+        height: 20vh;
+        display: flex;
+        color: black;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: none;
+
+        }
+
+        ol {
+            display: none;
+        }
+
+        .path {
+            position: relative;
+            top: -18px;
+            right: 65px;
+        }
+
+        .logo {
+            margin: -24px 0 0 -35px;
+        }
+
+        .hamburger {
+            transition: all .3s ease-in-out;
+            display: inline-block;
+            cursor: pointer;
+
+            .bar1,
+            .bar2,
+            .bar3 {
+                transition: all .3s ease-in-out;
+                background-color: black;
+                color: black;
+                margin: 6px 0;
+                width: 35px;
+                height: 5px;
+                margin-right: 0;
+                position: relative;
+                right: -46px;
+                top: -29px;
+
+
+
+            }
+
+        }
+
+        &.open {
+            background-color: orange;
+            width: 100%;
+            height: 100vh;
+
+            .hamburger {
+                transition: all .3s ease-in-out;
+                display: inline-block;
+                cursor: pointer;
+                position: absolute;
+                top: 41px;
+                left: 265px;
+
+                .bar1 {
+                    transform: rotate(45deg) translate(15px, 15px);
+                }
+
+                .bar2 {
+                    opacity: 0;
+                }
+
+                .bar3 {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .path {
+                display: none;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            ul {
+                display: block;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding: 10px 0;
+
+                li {
+                    padding: 10px 0;
+
+                    a {
+                        color: #ffff;
+                        font-size: 30px;
+                        margin: 10px 0;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .banner {
+        background-image: url(../img/banner.png);
+        height: 80vh;
+        width: 100vw;
+        background-position-x: -773px;
+        background-position-y: 484px;
+        color: #ffff;
+        text-align: center;
+
+        .top {
+            font-size: 50px;
+            font-family: $bold;
+            padding-top: 120px;
+        }
+
+        .bottom {
+            margin-top: 20px;
+            font-size: 50px;
+            font-family: $bold;
+        }
+
+        ol {
+            display: flex;
+            padding: 15px 0 0 43px;
+
+
+            li {
+                font-size: 20px;
+                font-family: $semibold;
+                // list-style: numeric;
+                margin: 6px;
+            }
+        }
+    }
+
+    .product {
+        background-color: rgb(243, 243, 243);
+        margin-top: 45px;
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 40px;
+            background-color: rgb(243, 243, 243);
+
+            h2 {
+                color: black;
+            }
+
+            h3 {
+                border-bottom: 2px solid black;
+            }
+
+            .search {
+                width: 5%;
+                height: 5%;
+                margin-right: 7px;
+            }
+
+            .tpath {
+                margin: 0 0 0 -40px;
+                width: 15%;
+            }
+        }
+
+        .items {
+            position: relative;
+            display: flex;
+            margin: 0 29px;
+            color: rgb(243, 243, 243);
+
+            ul {
+                li {
+                    padding: 10px;
+                    color: black;
+
+                }
+            }
+
+            .bpath {
+                position: absolute;
+                bottom: 5px;
+                right: 2x;
+                right: -28px;
+                width: 15%;
+            }
+        }
+
+    }
+
+    .more {
+        background-color: rgb(243, 243, 243);
+        margin-top: 40px;
+
+        p {
+            padding: 20px 0 20px 10px;
+        }
+    }
+
+    .images {
+        margin-top: 30px;
+        text-align: center;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    .selling {
+        text-align: center;
+
+        .arrow {
+            position: absolute;
+            bottom: 1px;
+            left: 204px;
+        }
+
+        .card {
+            box-shadow: 5px 5px 5px 5px rgba(136, 135, 135, 0.75);
+            margin: 10px 0;
+        }
+
+        h2 {
+            margin: 80px 0 30px 0;
+        }
+
+        .cart {
+            position: relative;
+        }
+
+        .orange {
+            box-shadow: 5px;
+        }
+
+        .arr {
+            position: relative;
+        }
+
+        .peanut {
+            position: relative;
+
+        }
+    }
+
+    .off {
+        text-align: center;
+
+        .card {
+            box-shadow: 5px 5px 5px 5px rgba(136, 135, 135, 0.75);
+            margin: 10px 0;
+        }
+
+        h2 {
+            margin: 80px 0 30px 0;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom: 1px;
+            left: 204px;
+        }
+
+        .tomato {
+            position: relative;
+        }
+
+        .towel {
+            position: relative;
+
+        }
+
+        .bottles {
+            position: relative;
+
+        }
+    }
+
+    .breakfast {
+        background-image: url(../img/mukul-wadhwa-xpo5BggQo3E-unsplash.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+        background-position-x: -100px;
+
+        h2 {
+            padding: 20px;
+        }
+
+        img {
+            position: absolute;
+            top: 76px;
+            right: 17px;
+        }
+
+        h3 {
+            position: absolute;
+            padding: 166px 5px 0 5px;
+            color: #ffff;
+        }
+    }
+
+    .contact {
+        margin-top: 65px;
+
+        .headings {
+            display: flex;
+            margin: 0 0 20px 0;
+
+            .le {
+                border-bottom: 2px solid black;
+            }
+
+            .ri {
+                font-family: $regular;
+                margin-left: 20px;
+            }
+        }
+
+        .fo {
+            position: relative;
+
+            form input {
+                margin-top: 30px;
+                border-bottom: 2px solid black;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+
+            img {
+                position: absolute;
+                top: 30px;
+                left: 116px;
+            }
+        }
+
+        .log {
+            width: 50%;
+            margin-top: 90px;
+            margin-left: 102px;
+        }
+    }
+
+    footer {
+        background-color: black;
+        color: #ffff;
+        text-align: center;
+
+        h2 {
+            padding: 30px 0 10px 0;
+        }
+
+        h3 {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+    body {
+        header {
+            height: 40vh;
+
+            .path {
+                position: relative;
+                top: -27px;
+                right: 78px;
+            }
+
+             .hamburger {
+                position: absolute;
+                right: 68px;
+             }
+
+            .path {
+                position: relative;
+                top: -27px;
+                right: 229px;
+            }
+
+            .logo {
+                margin: -24px 0 0 -51px;
+            }
+        }
+
+        .banner ol {
+            display: flex;
+            padding: 15px 0 0 91px;
+        }
+
+        .item {
+            margin: 0px 0 0 -14px;
+        }
+
+        .product .items {
+            margin: 0 199px;
+
+            .bpath {
+                right: -196px;
+                width: 40%;
+            }
+        }
+
+        .more p {
+            padding: 20px 0 20px 0;
+            text-align: center;
+        }
+
+        .images img {
+            width: 69%;
+        }
+
+        .selling .arrow {
+            left: 286px;
+        }
+
+        .off .arrow {
+            left: 286px;
+        }
+
+        .breakfast {
+            background-position-x: 0px;
+        }
+
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    body {
+
+        h2 {
+            font-size: 34px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 31px;
+        }
+
+        header {
+            height: 12vh;
+
+            .path {
+                right: 281px;
+            }
+
+            .logo {
+                margin: -24px 0 0 -60px;
+            }  
+          
+        }
+
+            &.open{
+                .hamburger {
+                    transition: all 0.3s ease-in-out;
+                    display: block;
+                    cursor: pointer;
+                   position: absolute;
+                    top: 41px;
+                    right: 20px;
+            
+        }
+
+        .banner {
+            background-image: url(../img/banner.png);
+            height: 88vh;
+            width: 100vw;
+            background-position-x: -493px;
+            background-position-y: 653px;
+            color: white;
+            text-align: center;
+
+            .top {
+                padding: 294px 0 0 0;
+            }
+
+            ol {
+                display: flex;
+                padding: 15px 0 0 139px;
+            }
+
+
+        }
+
+        .product .items {
+            ul li {
+                font-size: 25px;
+            }
+
+            .bpath {
+                right: -196px;
+                width: 30%;
+            }
+        }
+
+        .more p {
+            padding: 20px 5px 20px 5px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .breakfast {
+            height: 370px;
+
+            h3 {
+                padding: 206px 5px 0 49px;
+                font-size: 25px;
+            }
+        }
+
+        .breakfast {
+            background-position-x: 0px;
+
+            h3 {
+                margin: 28px 0 0 144px;
+            }
+        }
+
+        .contact {
+            .log {
+                margin-left: 190px;
+            }
+
+            .fo form input {
+                margin-top: 70px;
+                border-bottom: 2px solid black;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                font-size: 42px;
+            }
+
+            .fo img {
+                position: absolute;
+                top: 57px;
+                left: 283px;
+                width: 20%;
+            }
+        }
+    }
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        header {
+            height: 15vh;
+
+            .path {
+                right: 285px;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            ul {
+                display: block;
+                display: flex;
+
+                li a {
+                    color: black;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 25px;
+                }
+
+                .h {
+                    font-family: $bold;
+                }
+
+            }
+
+            ol {
+                display: block;
+                font-size: 25px;
+            }
+
+            .logo {
+                margin: 0 20px 0 -2px;
+            }
+        }
+
+        .banner {
+            background-image: url(../img/banner.png);
+            height: 88vh;
+            width: 100vw;
+            background-position-x: -29px;
+            background-position-y: 653px;
+            color: white;
+            text-align: center;
+
+            .top {
+                padding: 294px 850px 0 0;
+                font-size: 60px;
+            }
+
+            .bottom {
+                font-size: 60px;
+                padding: 0 850px 0 0;
+            }
+
+            ol {
+                display: flex;
+                padding: 15px 0 0 0px;
+            }
+        }
+
+        .product {
+            .items {
+                margin: 0 413px;
+
+                .bpath {
+                    right: -385px;
+                    width: 30%;
+                }
+
+                ul li {
+                    padding: 30px;
+
+                }
+            }
+
+        }
+
+        .images img {
+            width: 100%;
+        }
+
+        .breakfast {
+            height: 625px;
+
+            h3 {
+                padding: 466px 5px 0 361px;
+                font-size: 25px;
+            }
+
+            img {
+                top: 276px;
+                right: 35px;
+            }
+
+            h2 {
+                padding: 46px 0 0 20px;
+            }
+
+        }
+
+        .contact {
+            .fo img {
+                position: absolute;
+                top: 68px;
+                left: 283px;
+                width: 10%;
+            }
+
+            .log {
+                margin-left: 532px;
+                width: 20%;
+            }
+        }
+
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {}
