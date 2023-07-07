@@ -1,0 +1,754 @@
+aa html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  width: 100%;
+}
+.navbar a {
+  display: none;
+}
+.navbar .two .ii {
+  display: none;
+}
+.navbar .sec {
+  display: none;
+}
+
+.banner {
+  background-image: url(./Rectangle\ 82.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 53, 118);
+  padding-top: 30px;
+  padding-bottom: 280px;
+}
+.banner h1 {
+  font-family: "cera-black" !important;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 70px;
+  color: white;
+}
+.banner p {
+  color: white;
+  text-align: center;
+  font-family: "avenir" !important;
+}
+.banner button {
+  background-color: white;
+  color: black;
+  width: 290px;
+  height: 40px;
+  border: none;
+  margin: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+.banner .oo {
+  background-color: rgb(0, 133, 132);
+  color: white;
+  border: none;
+}
+
+.laptop {
+  width: 80vw;
+  height: 500px;
+  margin-left: 38px;
+  margin-top: -82px;
+}
+.laptop img {
+  width: 100%;
+}
+.laptop .bn {
+  margin-top: -350px;
+  margin-left: 390px;
+  width: 70px;
+  height: 45px;
+}
+
+.about {
+  margin: 60px 0;
+}
+.about .col-md-6 {
+  margin-top: 40px;
+}
+.about .col-md-6 h2 {
+  color: rgb(0, 59, 118);
+  font-family: "cera-black" !important;
+}
+.about .col-md-6 p {
+  color: rgb(0, 53, 118);
+  margin-top: 20px;
+  font-family: "avenir" !important;
+}
+.about .col-md-6 p span {
+  font-weight: bold;
+}
+.about .col-md-6 button {
+  background-color: rgb(0, 53, 118);
+  font-weight: bold;
+  width: 220px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+.started h2 {
+  text-align: center;
+  color: rgb(0, 53, 118);
+  font-family: "cera-black" !important;
+}
+.started .col-md-3 {
+  background-color: rgb(7, 21, 86);
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 50px;
+  width: 90vw;
+  margin-left: 20px;
+}
+.started .col-md-3 p {
+  color: white;
+  text-align: center;
+  font-family: "avenir" !important;
+}
+.started .col-md-3 h6 {
+  color: white;
+  font-size: larger;
+  text-align: center;
+  font-family: "cera-black" !important;
+}
+.started .col-md-3 .img {
+  margin-left: 93px;
+}
+.started .col-md-3 .emp {
+  background-color: rgb(0, 55, 125);
+  width: 60px;
+  height: 60px;
+  border-radius: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -25px;
+  margin-top: -20px;
+}
+.started .col-md-3 .emp h1 {
+  color: white;
+  text-align: center;
+  font-family: "cera-black" !important;
+}
+.started button {
+  margin-left: 25%;
+  background-color: rgb(0, 55, 125);
+  color: white;
+  border: none;
+  width: 200px;
+  height: 60px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.features {
+  margin: 90px 0;
+}
+.features .col-md-7 .col-md-6 .empo {
+  background-color: rgb(0, 55, 125);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 45px;
+}
+.features .col-md-7 .col-md-6 .empo img {
+  width: 70%;
+  margin-left: 10px;
+}
+.features .col-md-7 .col-md-6 h5 {
+  color: rgb(0, 55, 125);
+  font-family: "cera-black" !important;
+}
+.features .col-md-7 .col-md-6 p {
+  color: rgb(0, 55, 125);
+  font-family: "avenir" !important;
+}
+.features .col-md-5 h3 {
+  color: rgb(0, 55, 125);
+  font-family: "cera-black" !important;
+  font-size: xx-large;
+}
+.features .col-md-5 p {
+  color: rgb(0, 55, 125);
+  font-family: "avenir" !important;
+}
+
+.use {
+  margin: 50px 0;
+  background-color: rgb(248, 248, 248);
+  padding: 50px 0;
+}
+.use h3 {
+  color: rgb(0, 55, 125);
+  font-size: xx-large;
+  font-family: "cera-black" !important;
+}
+.use .user {
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.use .user .empo {
+  background-color: rgb(0, 55, 125);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 45px;
+}
+.use .user .empo img {
+  width: 70%;
+  margin-left: 10px;
+}
+.use .user h5 {
+  color: rgb(0, 55, 125);
+  margin-top: 20px;
+  font-family: "cera-black" !important;
+}
+.use .user p {
+  color: rgb(0, 55, 125);
+  margin-top: 10px;
+  font-size: small;
+  font-family: "avenir" !important;
+}
+.use .user button {
+  background-color: rgb(0, 55, 125);
+  width: 80%;
+  height: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.use .arrow {
+  display: flex;
+  margin-left: 70%;
+  margin-top: 40px;
+}
+.use .arrow .one {
+  margin-left: 20px;
+}
+.use .arrow .one:hover {
+  color: purple;
+}
+
+.testimonials {
+  background-color: rgb(7, 21, 86);
+  margin: 50px 0;
+  padding: 50px 0;
+}
+.testimonials .col-md-4 h4 {
+  color: white;
+  font-size: xx-large;
+  padding-top: 120px;
+}
+.testimonials .col-md-4 p {
+  color: white;
+  margin-top: 20px;
+  font-family: "avenir" !important;
+}
+.testimonials .col-md-4 .arrows {
+  display: flex;
+  margin-top: 40px;
+}
+.testimonials .col-md-4 .arrows .two {
+  margin-left: 20px;
+}
+.testimonials .col-md-7 .tadiwa .wq {
+  position: relative;
+  margin-top: 30px;
+  width: 10vw;
+  padding-left: 10px;
+}
+.testimonials .col-md-7 .tadiwa .wq .p {
+  background-color: rgb(0, 58, 118);
+  padding: 50px 20px;
+}
+.testimonials .col-md-7 .tadiwa .wq .p h5 {
+  color: white;
+  font-family: "cera-black" !important;
+  margin-top: 10px;
+}
+.testimonials .col-md-7 .tadiwa .wq .p h6 {
+  color: rgb(128, 165, 193);
+  font-family: "cera-black" !important;
+  margin-top: 10px;
+}
+.testimonials .col-md-7 .tadiwa .wq .p p {
+  color: white;
+  margin-top: 20px;
+  font-family: "avenir" !important;
+}
+.testimonials .col-md-7 .tadiwa .wq .io {
+  position: absolute;
+  top: 38%;
+}
+
+.questions .col-md-6 .wat {
+  background-color: rgb(0, 55, 125);
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.questions .col-md-6 .wat h6 {
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+  font-family: "cera-black" !important;
+}
+.questions .col-md-6 p {
+  color: rgb(0, 55, 125);
+  font-size: smaller;
+  margin-top: 40px;
+  font-family: "avenir" !important;
+}
+.questions .col-md-5 h3 {
+  color: rgb(0, 55, 125);
+  font-size: xx-large;
+  font-family: "cera-black" !important;
+}
+.questions .col-md-5 p {
+  color: rgb(0, 55, 125);
+  margin-top: 20px;
+  font-family: "avenir" !important;
+}
+
+.been h3 {
+  text-align: center;
+  color: rgb(0, 55, 125);
+  font-family: "cera-black" !important;
+}
+.been .img {
+  border: solid 5px rgb(242, 242, 242);
+  border-radius: 10px;
+  gap: 10px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
+}
+.been .img .img img {
+  width: 100%;
+}
+.been #net {
+  margin-top: 30px;
+  height: 250px;
+}
+.been .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0;
+  padding: 150px 0;
+  background-image: url(./imgs/Rectangle\ 82.png);
+  background-color: rgb(0, 53, 118);
+}
+.credit h1 {
+  color: white;
+  font-family: "cera-black" !important;
+}
+.credit p {
+  color: white;
+  font-family: "avenir" !important;
+}
+.credit button {
+  height: 50px;
+  border: none;
+  color: rgb(0, 55, 125);
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgb(47, 55, 71);
+  padding: 70px;
+}
+.footer .row {
+  margin-left: 70px;
+}
+.footer .row .col-md-3 h6 {
+  color: white;
+  font-size: x-large;
+  font-family: "cera-black" !important;
+}
+.footer .row .col-md-3 p {
+  color: white;
+  color: white;
+  font-family: "avenir" !important;
+}
+
+.ghh {
+  margin: 50px 0;
+  background-color: rgb(248, 248, 248);
+  padding: 50px 0;
+}
+.ghh h3 {
+  color: rgb(0, 55, 125);
+  font-size: xx-large;
+  font-weight: bold;
+}
+.ghh .carousel .carousel-inner {
+  display: flex;
+}
+.ghh .carousel .carousel-inner .col-md-3 {
+  margin-top: 60px;
+}
+.ghh .carousel .carousel-inner .col-md-3 .empo {
+  background-color: rgb(0, 55, 125);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 45px;
+}
+.ghh .carousel .carousel-inner .col-md-3 .empo img {
+  width: 70%;
+  margin-left: 10px;
+}
+.ghh .carousel .carousel-inner .col-md-3 h5 {
+  color: rgb(0, 55, 125);
+  font-weight: bold;
+}
+.ghh .carousel .carousel-inner .col-md-3 p {
+  color: rgb(0, 55, 125);
+}
+.ghh .carousel .carousel-inner .col-md-3 button {
+  background-color: rgb(0, 55, 125);
+  width: 80%;
+  height: 50px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+.ghh .arrow {
+  display: flex;
+  margin-left: 70%;
+  margin-top: 40px;
+}
+.ghh .arrow .one {
+  margin-left: 20px;
+}
+.ghh .arrow .one:hover {
+  color: purple;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner h1 {
+    padding-top: 120px;
+  }
+  .banner .navbar {
+    padding-top: 20px;
+  }
+  .banner .navbar .container {
+    display: flex;
+  }
+  .banner .navbar .container .one {
+    display: flex;
+    align-items: center;
+  }
+  .banner .navbar .container .one img {
+    width: 40%;
+  }
+  .banner .navbar .container .one a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .banner .navbar .container .two {
+    display: flex;
+    align-items: center;
+  }
+  .banner .navbar .container .two .ii {
+    margin-left: 20px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .banner .navbar .container .two .ii a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  .banner .navbar .container .two .ii img {
+    width: 80%;
+  }
+  .banner .navbar .container .two .op {
+    width: 20px;
+    margin-left: 10px;
+  }
+  .banner .navbar .container .two .op img {
+    width: 100%;
+  }
+  .banner .navbar .container .two .sec {
+    display: flex;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-left: 10px;
+  }
+  .banner .navbar .container .two .sec img {
+    margin-left: -30px;
+  }
+  .banner .navbar .container .two .sec p {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+  }
+  .laptop {
+    margin-left: 274px;
+    width: 60vw;
+    margin-top: -200px;
+  }
+  .laptop img {
+    width: 100%;
+  }
+  .about .col-md-6 .img {
+    width: 35vw;
+  }
+  .about .col-md-6 .img img {
+    width: 100%;
+  }
+  .about .col-md-6 h2 {
+    margin-top: 80px;
+  }
+  .started {
+    margin: 40px 0;
+  }
+  .started .col-md-3 {
+    width: 20vw;
+    margin-left: 120px;
+    display: flex;
+  }
+  .started .col-md-3 img {
+    margin-left: -30px;
+  }
+  .started .col-md-3 h1 {
+    padding-top: 20px;
+    font-size: larger;
+  }
+  .started button {
+    margin-left: 40%;
+    width: 290px;
+  }
+  .testimonials .col-md-3 {
+    position: relative;
+    margin-left: 60px;
+  }
+  .testimonials .col-md-3 h5 {
+    padding-top: 30px;
+  }
+  .testimonials .col-md-3 .io {
+    position: absolute;
+    top: 30%;
+  }
+  .questions {
+    margin: 90px 0;
+  }
+  .been {
+    margin: 70px 0;
+  }
+  .been .col-md-2 {
+    margin-left: 90px;
+  }
+  .been .col-md-2 .img img {
+    margin-top: 30px;
+  }
+  .been #netone {
+    margin-top: 70px;
+  }
+  .credit h1 {
+    font-size: 60px;
+  }
+  .credit p {
+    font-size: x-large;
+    margin-top: 10px;
+  }
+  .credit button {
+    margin-top: 10px;
+  }
+  .footer .row {
+    margin-left: 220px;
+  }
+  .footer .row .col-md-3 {
+    margin: 0 40px;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
