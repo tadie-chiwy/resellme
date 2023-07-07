@@ -1,0 +1,58 @@
+        // &.open{
+
+        //     ul{
+        //         display: block;
+        //         position:absolute;
+        //         top: 0;
+        //         left: 0;
+        //         height: 100vh;
+        //         width: 100%;
+        //         background-color: rgb(255, 166, 0);
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         flex-direction: column;
+
+        //         li{
+        //             padding: 10px 0px;
+        //             a{
+        //                 color: white;
+        //                 font-size: 28px;
+        //                 text-decoration: none;
+        //                 font-family: $regular;
+        //             }
+        //         }
+        //     }
+
+ 
+        //     .hamburger {
+        //         display: inline-block;
+        //         cursor: pointer;
+    
+        //         .bar2{
+        //             opacity: 0;
+        //             transform: translateX(-20px);
+        //         }
+
+        //         .bar1{
+        //             top: -8px;
+        //             transform:rotate(45deg);
+        //         }
+
+        //         .bar3{
+        //             transform:rotate(-45deg);
+        //         }
+        //     }
+        // }
+
+
+        // javscript
+
+// const ham = document.querySelector(".hamburger");
+// const hd = document.querySelector("header");
+
+// ham.addEventListener("click", function(){
+//     hd.classList.toggle("open");
+// })
+
+        // ====
